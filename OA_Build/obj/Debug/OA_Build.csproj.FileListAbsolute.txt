@@ -1,0 +1,10 @@
+F:\项目\OA表单制作\OA_Build\OA_Build\bin\OA_Build.dll
+F:\项目\OA表单制作\OA_Build\OA_Build\bin\OA_Build.pdb
+F:\项目\OA表单制作\OA_Build\OA_Build\obj\Debug\OA_Build.dll
+F:\项目\OA表单制作\OA_Build\OA_Build\obj\Debug\OA_Build.pdb
+E:\C#开发案例\OA_Build\OA_Build\OA_Build\bin\OA_Build.dll.config
+E:\C#开发案例\OA_Build\OA_Build\OA_Build\bin\OA_Build.dll
+E:\C#开发案例\OA_Build\OA_Build\OA_Build\bin\OA_Build.pdb
+E:\C#开发案例\OA_Build\OA_Build\OA_Build\obj\Debug\OA_Build.csprojResolveAssemblyReference.cache
+E:\C#开发案例\OA_Build\OA_Build\OA_Build\obj\Debug\OA_Build.dll
+E:\C#开发案例\OA_Build\OA_Build\OA_Build\obj\Debug\OA_Build.pdb

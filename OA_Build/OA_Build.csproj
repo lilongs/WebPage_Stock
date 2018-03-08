@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{823DF6F0-2AAD-47C3-923D-AF3202FD3628}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OA_Build</RootNamespace>
+    <AssemblyName>OA_Build</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\OABillCSS .css" />
+    <Content Include="EHS\动火作业申请单.aspx" />
+    <Content Include="EHS\危害性管路裁接作业申请表.aspx" />
+    <Content Include="EHS\厂区道路占用申请表.aspx" />
+    <Content Include="EHS\吊装作业申请表.aspx" />
+    <Content Include="EHS\地下管路开挖申请建表.aspx" />
+    <Content Include="EHS\夹层作业申请单.aspx" />
+    <Content Include="EHS\密闭空间作业许可证.aspx" />
+    <Content Include="EHS\承揽商作业申请表.aspx" />
+    <Content Include="EHS\气体侦测器隔离申请表.aspx" />
+    <Content Include="EHS\消防中断作业申请表.aspx" />
+    <Content Include="EHS\高处作业申请单.aspx" />
+    <Content Include="HR\培训需求信息表.aspx" />
+    <Content Include="HR\自动离职人员申请表.aspx" />
+    <Content Include="images\ico.png" />
+    <Content Include="images\log.png" />
+    <Content Include="HR\邮件群发申请单.aspx" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="images\s2.png" />
+    <Content Include="IT\IT资产（部门内部）调配申请表.aspx" />
+    <Content Include="IT\各区域系统权限申请表.aspx" />
+    <Content Include="IT\流程建立及更改申请单.aspx" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="sample.htm" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="厂务部-EHS\CIP申请单.aspx" />
+    <Content Include="厂务部-EHS\个人防护用品请购申请单.aspx" />
+    <Content Include="厂务部-EHS\停送电联系单.aspx" />
+    <Content Include="厂务部-EHS\厂务临时备用金采购申请表.aspx" />
+    <Content Include="厂务部-EHS\厂务维修单.aspx" />
+    <Content Include="厂务部-EHS\固定资产投资申报单.aspx" />
+    <Content Include="厂务部-EHS\夹层作业申请单.aspx" />
+    <Content Include="EHS\火警侦测器隔离申请表.aspx" />
+    <Content Include="培训\特采申请单.aspx" />
+    <Content Include="外延生产\石墨盘领用申请单.aspx" />
+    <Content Include="外延生产\石墨盘报废申请单.aspx" />
+    <Content Include="外延设备\设备维修保养申请单.aspx" />
+    <Content Include="大连\出差旅费报销单.aspx" />
+    <Content Include="大连\品质\提案改善评审表.aspx" />
+    <Content Include="大连\备品备件申请表.aspx" />
+    <Content Include="大连\大连采购申购单.aspx" />
+    <Content Include="大连\委托分析.aspx" />
+    <Content Include="大连\客户退货处理单.aspx" />
+    <Content Include="大连\客服处理单.aspx" />
+    <Content Include="大连\客诉二次分析单.aspx" />
+    <Content Include="大连\客诉处理单%28打印模板-非自责%29.aspx" />
+    <Content Include="大连\客诉处理单.aspx" />
+    <Content Include="大连\客诉补充信息.aspx" />
+    <Content Include="大连\索赔申请.aspx" />
+    <Content Include="扬州\IT\IT资产报废申请单.aspx" />
+    <Content Include="扬州\IT\邮箱申请单.aspx" />
+    <Content Include="扬州\人事行政\事业部内部人员调动审批表.aspx" />
+    <Content Include="扬州\人事行政\办公用品申请表.aspx" />
+    <Content Include="扬州\人事行政\员工离职申请表.aspx" />
+    <Content Include="扬州\人事行政\委托授权书.aspx" />
+    <Content Include="扬州\人事行政\手机话费补贴申请表.aspx" />
+    <Content Include="扬州\人事行政\手机领用申请表.aspx" />
+    <Content Include="扬州\人事行政\月度采购计划审批表.aspx" />
+    <Content Include="扬州\人事行政\机票预订审批表.aspx" />
+    <Content Include="扬州\人事行政\职员入住申请表.aspx" />
+    <Content Include="扬州\厂务\维修申报单.aspx" />
+    <Content Include="扬州\报废申请单.aspx" />
+    <Content Include="扬州\质保\工程变更申请单.aspx" />
+    <Content Include="扬州\质保\文件申请单.aspx" />
+    <Content Include="扬州\质保\特采申请单.aspx" />
+    <Content Include="标准模板.aspx" />
+    <Content Include="经营计划部\生产物料需求计划单.aspx" />
+    <Content Include="经营计划部\补入库物料相关情况说明.aspx" />
+    <Content Include="蚌埠器件工厂\HR\人力需求申请表.aspx" />
+    <Content Include="蚌埠器件工厂\HR\出差申请单.aspx" />
+    <Content Include="蚌埠器件工厂\HR\奖励惩罚申请表.aspx" />
+    <Content Include="蚌埠器件工厂\HR\机票预订申请表.aspx" />
+    <Content Include="蚌埠器件工厂\HR\签卡申请.aspx" />
+    <Content Include="蚌埠器件工厂\HR\职员公寓入住申请.aspx" />
+    <Content Include="蚌埠器件工厂\HR\职员加班申请.aspx" />
+    <Content Include="蚌埠器件工厂\HR\职员请假申请单.aspx" />
+    <Content Include="蚌埠器件工厂\HR\行政维修申请.aspx" />
+    <Content Include="蚌埠器件工厂\HR\行政零星采购申请.aspx" />
+    <Content Include="蚌埠器件工厂\IT\Internet权限申请单.aspx" />
+    <Content Include="蚌埠器件工厂\IT\专业软件安装申请.aspx" />
+    <Content Include="蚌埠器件工厂\IT\文件服务器权限申请.aspx" />
+    <Content Include="蚌埠器件工厂\IT\移动存储设备权限申请.aspx" />
+    <Content Include="蚌埠器件工厂\IT\程式开发申请.aspx" />
+    <Content Include="蚌埠器件工厂\IT\邮箱申请.aspx" />
+    <Content Include="蚌埠器件工厂\厂务\承揽商作业申请.aspx" />
+    <Content Include="蚌埠器件工厂\厂务\门禁CCTV中断申请.aspx" />
+    <Content Include="蚌埠器件工厂\厂务\门禁权限申请.aspx" />
+    <Content Include="蚌埠器件工厂\质保\文件签核单.aspx" />
+    <Content Include="财务部\固定资产交付验收单.aspx" />
+    <Content Include="财务部\固定资产内部调配审批表.aspx" />
+    <Content Include="财务部\固定资产处理审批表.aspx" />
+    <Content Include="财务部\固定资产报废申请单.aspx" />
+    <Content Include="财务部\固定资产跨公司调配审批表.aspx" />
+    <Content Include="财务部\大修理及技术改造审批表.aspx" />
+    <Content Include="财务部\用款申请单.aspx" />
+    <Content Include="财务部\设备备品配件维修验收单.aspx" />
+    <Content Include="财务部\设备验收单.aspx" />
+    <Content Include="质保部\品质异常通知单.aspx" />
+    <Content Include="质保部\工程变更申请单.aspx" />
+    <Content Include="采购部\事业部价格确认单.aspx" />
+    <Content Include="采购部\事业部样品测试申请单.aspx" />
+    <Content Include="采购部\供应商处罚单.aspx" />
+    <Content Include="采购部\合格供应商资格取消申请表.aspx" />
+    <Content Include="采购部\备品备件送修单.aspx" />
+    <Content Include="采购部\小批量样品委托试用报告.aspx" />
+    <Content Include="采购部\工程确认书.aspx" />
+    <Content Include="采购部\招标价格确认单.aspx" />
+    <Content Include="采购部\招标方案申请立项书.aspx" />
+    <Content Include="采购部\支付货款免贴息申请.aspx" />
+    <Content Include="采购部\日扣息确认单.aspx" />
+    <Content Include="采购部\样品测试单.aspx" />
+    <Content Include="采购部\样品测试方案变更申请表.aspx" />
+    <Content Include="采购部\涨价物料申请表.aspx" />
+    <Content Include="采购部\现金免息支付申请.aspx" />
+    <Content Include="采购部\芯片事业部采购订单.aspx" />
+    <Content Include="采购部\订单变更通知单.aspx" />
+    <Content Include="采购部\贴息付现申请.aspx" />
+    <Content Include="采购部\黄金卖断结算表.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EHS\动火作业申请单.aspx.cs">
+      <DependentUpon>动火作业申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\动火作业申请单.aspx.designer.cs">
+      <DependentUpon>动火作业申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\危害性管路裁接作业申请表.aspx.cs">
+      <DependentUpon>危害性管路裁接作业申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\危害性管路裁接作业申请表.aspx.designer.cs">
+      <DependentUpon>危害性管路裁接作业申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\厂区道路占用申请表.aspx.cs">
+      <DependentUpon>厂区道路占用申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\厂区道路占用申请表.aspx.designer.cs">
+      <DependentUpon>厂区道路占用申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\吊装作业申请表.aspx.cs">
+      <DependentUpon>吊装作业申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\吊装作业申请表.aspx.designer.cs">
+      <DependentUpon>吊装作业申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\地下管路开挖申请建表.aspx.cs">
+      <DependentUpon>地下管路开挖申请建表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\地下管路开挖申请建表.aspx.designer.cs">
+      <DependentUpon>地下管路开挖申请建表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\夹层作业申请单.aspx.cs">
+      <DependentUpon>夹层作业申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\夹层作业申请单.aspx.designer.cs">
+      <DependentUpon>夹层作业申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\密闭空间作业许可证.aspx.cs">
+      <DependentUpon>密闭空间作业许可证.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\密闭空间作业许可证.aspx.designer.cs">
+      <DependentUpon>密闭空间作业许可证.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\承揽商作业申请表.aspx.cs">
+      <DependentUpon>承揽商作业申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\承揽商作业申请表.aspx.designer.cs">
+      <DependentUpon>承揽商作业申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\气体侦测器隔离申请表.aspx.cs">
+      <DependentUpon>气体侦测器隔离申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\气体侦测器隔离申请表.aspx.designer.cs">
+      <DependentUpon>气体侦测器隔离申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\消防中断作业申请表.aspx.cs">
+      <DependentUpon>消防中断作业申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\消防中断作业申请表.aspx.designer.cs">
+      <DependentUpon>消防中断作业申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\高处作业申请单.aspx.cs">
+      <DependentUpon>高处作业申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\高处作业申请单.aspx.designer.cs">
+      <DependentUpon>高处作业申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\培训需求信息表.aspx.cs">
+      <DependentUpon>培训需求信息表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\培训需求信息表.aspx.designer.cs">
+      <DependentUpon>培训需求信息表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\自动离职人员申请表.aspx.cs">
+      <DependentUpon>自动离职人员申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\自动离职人员申请表.aspx.designer.cs">
+      <DependentUpon>自动离职人员申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\邮件群发申请单.aspx.cs">
+      <DependentUpon>邮件群发申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\邮件群发申请单.aspx.designer.cs">
+      <DependentUpon>邮件群发申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT\IT资产（部门内部）调配申请表.aspx.cs">
+      <DependentUpon>IT资产（部门内部）调配申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT\IT资产（部门内部）调配申请表.aspx.designer.cs">
+      <DependentUpon>IT资产（部门内部）调配申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT\各区域系统权限申请表.aspx.cs">
+      <DependentUpon>各区域系统权限申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT\各区域系统权限申请表.aspx.designer.cs">
+      <DependentUpon>各区域系统权限申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT\流程建立及更改申请单.aspx.cs">
+      <DependentUpon>流程建立及更改申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT\流程建立及更改申请单.aspx.designer.cs">
+      <DependentUpon>流程建立及更改申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="厂务部-EHS\CIP申请单.aspx.cs">
+      <DependentUpon>CIP申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="厂务部-EHS\CIP申请单.aspx.designer.cs">
+      <DependentUpon>CIP申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="厂务部-EHS\个人防护用品请购申请单.aspx.cs">
+      <DependentUpon>个人防护用品请购申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="厂务部-EHS\个人防护用品请购申请单.aspx.designer.cs">
+      <DependentUpon>个人防护用品请购申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="厂务部-EHS\停送电联系单.aspx.cs">
+      <DependentUpon>停送电联系单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="厂务部-EHS\停送电联系单.aspx.designer.cs">
+      <DependentUpon>停送电联系单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="厂务部-EHS\厂务临时备用金采购申请表.aspx.cs">
+      <DependentUpon>厂务临时备用金采购申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="厂务部-EHS\厂务临时备用金采购申请表.aspx.designer.cs">
+      <DependentUpon>厂务临时备用金采购申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="厂务部-EHS\厂务维修单.aspx.cs">
+      <DependentUpon>厂务维修单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="厂务部-EHS\厂务维修单.aspx.designer.cs">
+      <DependentUpon>厂务维修单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="厂务部-EHS\固定资产投资申报单.aspx.cs">
+      <DependentUpon>固定资产投资申报单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="厂务部-EHS\固定资产投资申报单.aspx.designer.cs">
+      <DependentUpon>固定资产投资申报单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="厂务部-EHS\夹层作业申请单.aspx.cs">
+      <DependentUpon>夹层作业申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="厂务部-EHS\夹层作业申请单.aspx.designer.cs">
+      <DependentUpon>夹层作业申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EHS\火警侦测器隔离申请表.aspx.cs">
+      <DependentUpon>火警侦测器隔离申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EHS\火警侦测器隔离申请表.aspx.designer.cs">
+      <DependentUpon>火警侦测器隔离申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="培训\特采申请单.aspx.cs">
+      <DependentUpon>特采申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="培训\特采申请单.aspx.designer.cs">
+      <DependentUpon>特采申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="外延生产\石墨盘领用申请单.aspx.cs">
+      <DependentUpon>石墨盘领用申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="外延生产\石墨盘领用申请单.aspx.designer.cs">
+      <DependentUpon>石墨盘领用申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="外延生产\石墨盘报废申请单.aspx.cs">
+      <DependentUpon>石墨盘报废申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="外延生产\石墨盘报废申请单.aspx.designer.cs">
+      <DependentUpon>石墨盘报废申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="外延设备\设备维修保养申请单.aspx.cs">
+      <DependentUpon>设备维修保养申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="外延设备\设备维修保养申请单.aspx.designer.cs">
+      <DependentUpon>设备维修保养申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\出差旅费报销单.aspx.cs">
+      <DependentUpon>出差旅费报销单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\出差旅费报销单.aspx.designer.cs">
+      <DependentUpon>出差旅费报销单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\品质\提案改善评审表.aspx.cs">
+      <DependentUpon>提案改善评审表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\品质\提案改善评审表.aspx.designer.cs">
+      <DependentUpon>提案改善评审表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\备品备件申请表.aspx.cs">
+      <DependentUpon>备品备件申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\备品备件申请表.aspx.designer.cs">
+      <DependentUpon>备品备件申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\大连采购申购单.aspx.cs">
+      <DependentUpon>大连采购申购单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\大连采购申购单.aspx.designer.cs">
+      <DependentUpon>大连采购申购单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\委托分析.aspx.cs">
+      <DependentUpon>委托分析.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\委托分析.aspx.designer.cs">
+      <DependentUpon>委托分析.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\客户退货处理单.aspx.cs">
+      <DependentUpon>客户退货处理单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\客户退货处理单.aspx.designer.cs">
+      <DependentUpon>客户退货处理单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\客服处理单.aspx.cs">
+      <DependentUpon>客服处理单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\客服处理单.aspx.designer.cs">
+      <DependentUpon>客服处理单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\客诉二次分析单.aspx.cs">
+      <DependentUpon>客诉二次分析单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\客诉二次分析单.aspx.designer.cs">
+      <DependentUpon>客诉二次分析单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\客诉处理单%28打印模板-非自责%29.aspx.cs">
+      <DependentUpon>客诉处理单%28打印模板-非自责%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\客诉处理单%28打印模板-非自责%29.aspx.designer.cs">
+      <DependentUpon>客诉处理单%28打印模板-非自责%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\客诉处理单.aspx.cs">
+      <DependentUpon>客诉处理单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\客诉处理单.aspx.designer.cs">
+      <DependentUpon>客诉处理单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\客诉补充信息.aspx.cs">
+      <DependentUpon>客诉补充信息.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\客诉补充信息.aspx.designer.cs">
+      <DependentUpon>客诉补充信息.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="大连\索赔申请.aspx.cs">
+      <DependentUpon>索赔申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="大连\索赔申请.aspx.designer.cs">
+      <DependentUpon>索赔申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\IT\IT资产报废申请单.aspx.cs">
+      <DependentUpon>IT资产报废申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\IT\IT资产报废申请单.aspx.designer.cs">
+      <DependentUpon>IT资产报废申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\IT\邮箱申请单.aspx.cs">
+      <DependentUpon>邮箱申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\IT\邮箱申请单.aspx.designer.cs">
+      <DependentUpon>邮箱申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\人事行政\事业部内部人员调动审批表.aspx.cs">
+      <DependentUpon>事业部内部人员调动审批表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\人事行政\事业部内部人员调动审批表.aspx.designer.cs">
+      <DependentUpon>事业部内部人员调动审批表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\人事行政\办公用品申请表.aspx.cs">
+      <DependentUpon>办公用品申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\人事行政\办公用品申请表.aspx.designer.cs">
+      <DependentUpon>办公用品申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\人事行政\员工离职申请表.aspx.cs">
+      <DependentUpon>员工离职申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\人事行政\员工离职申请表.aspx.designer.cs">
+      <DependentUpon>员工离职申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\人事行政\委托授权书.aspx.cs">
+      <DependentUpon>委托授权书.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\人事行政\委托授权书.aspx.designer.cs">
+      <DependentUpon>委托授权书.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\人事行政\手机话费补贴申请表.aspx.cs">
+      <DependentUpon>手机话费补贴申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\人事行政\手机话费补贴申请表.aspx.designer.cs">
+      <DependentUpon>手机话费补贴申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\人事行政\手机领用申请表.aspx.cs">
+      <DependentUpon>手机领用申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\人事行政\手机领用申请表.aspx.designer.cs">
+      <DependentUpon>手机领用申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\人事行政\月度采购计划审批表.aspx.cs">
+      <DependentUpon>月度采购计划审批表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\人事行政\月度采购计划审批表.aspx.designer.cs">
+      <DependentUpon>月度采购计划审批表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\人事行政\机票预订审批表.aspx.cs">
+      <DependentUpon>机票预订审批表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\人事行政\机票预订审批表.aspx.designer.cs">
+      <DependentUpon>机票预订审批表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\人事行政\职员入住申请表.aspx.cs">
+      <DependentUpon>职员入住申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\人事行政\职员入住申请表.aspx.designer.cs">
+      <DependentUpon>职员入住申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\厂务\维修申报单.aspx.cs">
+      <DependentUpon>维修申报单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\厂务\维修申报单.aspx.designer.cs">
+      <DependentUpon>维修申报单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\报废申请单.aspx.cs">
+      <DependentUpon>报废申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\报废申请单.aspx.designer.cs">
+      <DependentUpon>报废申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\质保\工程变更申请单.aspx.cs">
+      <DependentUpon>工程变更申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\质保\工程变更申请单.aspx.designer.cs">
+      <DependentUpon>工程变更申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\质保\文件申请单.aspx.cs">
+      <DependentUpon>文件申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\质保\文件申请单.aspx.designer.cs">
+      <DependentUpon>文件申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="扬州\质保\特采申请单.aspx.cs">
+      <DependentUpon>特采申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="扬州\质保\特采申请单.aspx.designer.cs">
+      <DependentUpon>特采申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="标准模板.aspx.cs">
+      <DependentUpon>标准模板.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="标准模板.aspx.designer.cs">
+      <DependentUpon>标准模板.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="经营计划部\生产物料需求计划单.aspx.cs">
+      <DependentUpon>生产物料需求计划单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="经营计划部\生产物料需求计划单.aspx.designer.cs">
+      <DependentUpon>生产物料需求计划单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="经营计划部\补入库物料相关情况说明.aspx.cs">
+      <DependentUpon>补入库物料相关情况说明.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="经营计划部\补入库物料相关情况说明.aspx.designer.cs">
+      <DependentUpon>补入库物料相关情况说明.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\人力需求申请表.aspx.cs">
+      <DependentUpon>人力需求申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\人力需求申请表.aspx.designer.cs">
+      <DependentUpon>人力需求申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\出差申请单.aspx.cs">
+      <DependentUpon>出差申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\出差申请单.aspx.designer.cs">
+      <DependentUpon>出差申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\奖励惩罚申请表.aspx.cs">
+      <DependentUpon>奖励惩罚申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\奖励惩罚申请表.aspx.designer.cs">
+      <DependentUpon>奖励惩罚申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\机票预订申请表.aspx.cs">
+      <DependentUpon>机票预订申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\机票预订申请表.aspx.designer.cs">
+      <DependentUpon>机票预订申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\签卡申请.aspx.cs">
+      <DependentUpon>签卡申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\签卡申请.aspx.designer.cs">
+      <DependentUpon>签卡申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\职员公寓入住申请.aspx.cs">
+      <DependentUpon>职员公寓入住申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\职员公寓入住申请.aspx.designer.cs">
+      <DependentUpon>职员公寓入住申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\职员加班申请.aspx.cs">
+      <DependentUpon>职员加班申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\职员加班申请.aspx.designer.cs">
+      <DependentUpon>职员加班申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\职员请假申请单.aspx.cs">
+      <DependentUpon>职员请假申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\职员请假申请单.aspx.designer.cs">
+      <DependentUpon>职员请假申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\行政维修申请.aspx.cs">
+      <DependentUpon>行政维修申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\行政维修申请.aspx.designer.cs">
+      <DependentUpon>行政维修申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\行政零星采购申请.aspx.cs">
+      <DependentUpon>行政零星采购申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\HR\行政零星采购申请.aspx.designer.cs">
+      <DependentUpon>行政零星采购申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\Internet权限申请单.aspx.cs">
+      <DependentUpon>Internet权限申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\Internet权限申请单.aspx.designer.cs">
+      <DependentUpon>Internet权限申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\专业软件安装申请.aspx.cs">
+      <DependentUpon>专业软件安装申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\专业软件安装申请.aspx.designer.cs">
+      <DependentUpon>专业软件安装申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\文件服务器权限申请.aspx.cs">
+      <DependentUpon>文件服务器权限申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\文件服务器权限申请.aspx.designer.cs">
+      <DependentUpon>文件服务器权限申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\移动存储设备权限申请.aspx.cs">
+      <DependentUpon>移动存储设备权限申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\移动存储设备权限申请.aspx.designer.cs">
+      <DependentUpon>移动存储设备权限申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\程式开发申请.aspx.cs">
+      <DependentUpon>程式开发申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\程式开发申请.aspx.designer.cs">
+      <DependentUpon>程式开发申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\邮箱申请.aspx.cs">
+      <DependentUpon>邮箱申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\IT\邮箱申请.aspx.designer.cs">
+      <DependentUpon>邮箱申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\厂务\承揽商作业申请.aspx.cs">
+      <DependentUpon>承揽商作业申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\厂务\承揽商作业申请.aspx.designer.cs">
+      <DependentUpon>承揽商作业申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\厂务\门禁CCTV中断申请.aspx.cs">
+      <DependentUpon>门禁CCTV中断申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\厂务\门禁CCTV中断申请.aspx.designer.cs">
+      <DependentUpon>门禁CCTV中断申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\厂务\门禁权限申请.aspx.cs">
+      <DependentUpon>门禁权限申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\厂务\门禁权限申请.aspx.designer.cs">
+      <DependentUpon>门禁权限申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\质保\文件签核单.aspx.cs">
+      <DependentUpon>文件签核单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="蚌埠器件工厂\质保\文件签核单.aspx.designer.cs">
+      <DependentUpon>文件签核单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\固定资产交付验收单.aspx.cs">
+      <DependentUpon>固定资产交付验收单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="财务部\固定资产交付验收单.aspx.designer.cs">
+      <DependentUpon>固定资产交付验收单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\固定资产内部调配审批表.aspx.cs">
+      <DependentUpon>固定资产内部调配审批表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="财务部\固定资产内部调配审批表.aspx.designer.cs">
+      <DependentUpon>固定资产内部调配审批表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\固定资产处理审批表.aspx.cs">
+      <DependentUpon>固定资产处理审批表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="财务部\固定资产处理审批表.aspx.designer.cs">
+      <DependentUpon>固定资产处理审批表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\固定资产报废申请单.aspx.cs">
+      <DependentUpon>固定资产报废申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="财务部\固定资产报废申请单.aspx.designer.cs">
+      <DependentUpon>固定资产报废申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\固定资产跨公司调配审批表.aspx.cs">
+      <DependentUpon>固定资产跨公司调配审批表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="财务部\固定资产跨公司调配审批表.aspx.designer.cs">
+      <DependentUpon>固定资产跨公司调配审批表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\大修理及技术改造审批表.aspx.cs">
+      <DependentUpon>大修理及技术改造审批表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="财务部\大修理及技术改造审批表.aspx.designer.cs">
+      <DependentUpon>大修理及技术改造审批表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\用款申请单.aspx.cs">
+      <DependentUpon>用款申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="财务部\用款申请单.aspx.designer.cs">
+      <DependentUpon>用款申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\设备备品配件维修验收单.aspx.cs">
+      <DependentUpon>设备备品配件维修验收单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="财务部\设备备品配件维修验收单.aspx.designer.cs">
+      <DependentUpon>设备备品配件维修验收单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\设备验收单.aspx.cs">
+      <DependentUpon>设备验收单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="财务部\设备验收单.aspx.designer.cs">
+      <DependentUpon>设备验收单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="质保部\品质异常通知单.aspx.cs">
+      <DependentUpon>品质异常通知单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="质保部\品质异常通知单.aspx.designer.cs">
+      <DependentUpon>品质异常通知单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="质保部\工程变更申请单.aspx.cs">
+      <DependentUpon>工程变更申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="质保部\工程变更申请单.aspx.designer.cs">
+      <DependentUpon>工程变更申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\事业部价格确认单.aspx.cs">
+      <DependentUpon>事业部价格确认单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\事业部价格确认单.aspx.designer.cs">
+      <DependentUpon>事业部价格确认单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\事业部样品测试申请单.aspx.cs">
+      <DependentUpon>事业部样品测试申请单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\事业部样品测试申请单.aspx.designer.cs">
+      <DependentUpon>事业部样品测试申请单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\供应商处罚单.aspx.cs">
+      <DependentUpon>供应商处罚单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\供应商处罚单.aspx.designer.cs">
+      <DependentUpon>供应商处罚单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\合格供应商资格取消申请表.aspx.cs">
+      <DependentUpon>合格供应商资格取消申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\合格供应商资格取消申请表.aspx.designer.cs">
+      <DependentUpon>合格供应商资格取消申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\备品备件送修单.aspx.cs">
+      <DependentUpon>备品备件送修单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\备品备件送修单.aspx.designer.cs">
+      <DependentUpon>备品备件送修单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\小批量样品委托试用报告.aspx.cs">
+      <DependentUpon>小批量样品委托试用报告.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\小批量样品委托试用报告.aspx.designer.cs">
+      <DependentUpon>小批量样品委托试用报告.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\工程确认书.aspx.cs">
+      <DependentUpon>工程确认书.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\工程确认书.aspx.designer.cs">
+      <DependentUpon>工程确认书.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\招标价格确认单.aspx.cs">
+      <DependentUpon>招标价格确认单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\招标价格确认单.aspx.designer.cs">
+      <DependentUpon>招标价格确认单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\招标方案申请立项书.aspx.cs">
+      <DependentUpon>招标方案申请立项书.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\招标方案申请立项书.aspx.designer.cs">
+      <DependentUpon>招标方案申请立项书.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\支付货款免贴息申请.aspx.cs">
+      <DependentUpon>支付货款免贴息申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\支付货款免贴息申请.aspx.designer.cs">
+      <DependentUpon>支付货款免贴息申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\日扣息确认单.aspx.cs">
+      <DependentUpon>日扣息确认单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\日扣息确认单.aspx.designer.cs">
+      <DependentUpon>日扣息确认单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\样品测试单.aspx.cs">
+      <DependentUpon>样品测试单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\样品测试单.aspx.designer.cs">
+      <DependentUpon>样品测试单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\样品测试方案变更申请表.aspx.cs">
+      <DependentUpon>样品测试方案变更申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\样品测试方案变更申请表.aspx.designer.cs">
+      <DependentUpon>样品测试方案变更申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\涨价物料申请表.aspx.cs">
+      <DependentUpon>涨价物料申请表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\涨价物料申请表.aspx.designer.cs">
+      <DependentUpon>涨价物料申请表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\现金免息支付申请.aspx.cs">
+      <DependentUpon>现金免息支付申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\现金免息支付申请.aspx.designer.cs">
+      <DependentUpon>现金免息支付申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\芯片事业部采购订单.aspx.cs">
+      <DependentUpon>芯片事业部采购订单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\芯片事业部采购订单.aspx.designer.cs">
+      <DependentUpon>芯片事业部采购订单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\订单变更通知单.aspx.cs">
+      <DependentUpon>订单变更通知单.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\订单变更通知单.aspx.designer.cs">
+      <DependentUpon>订单变更通知单.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\贴息付现申请.aspx.cs">
+      <DependentUpon>贴息付现申请.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\贴息付现申请.aspx.designer.cs">
+      <DependentUpon>贴息付现申请.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="采购部\黄金卖断结算表.aspx.cs">
+      <DependentUpon>黄金卖断结算表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="采购部\黄金卖断结算表.aspx.designer.cs">
+      <DependentUpon>黄金卖断结算表.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39649</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
