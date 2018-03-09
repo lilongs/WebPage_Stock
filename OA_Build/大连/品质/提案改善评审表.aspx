@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="Backdiv" align="center">&nbsp;
-<table id="viewForm" class="ViewForm" cellspacing="0" cellpadding="0" name="oTable0" style="width:80%;">
+<table id="viewForm" class="ViewForm" cellspacing="0" cellpadding="0" name="oTable0">
     <colgroup><col width="25%"></col><col width="25%"></col><col width="25%"></col><col width="25%"></col></colgroup>
     <tbody>
         <tr>
@@ -24,21 +24,21 @@
             </span></td>
         </tr>
         <tr>
-            <td>申请人：<input id="field28661" class="InputStyle" name="field28661" value="[只读]申请人" type="text" /><br />
+            <td>申请人：<input id="$field28661$" class="InputStyle" name="field28661" value="[只读]申请人" type="text" /><br />
             Prepared</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
-            <td>编号：<input id="field28662" class="InputStyle" name="field28662" value="[只读]编号" type="text" /><br />
+            <td>编号：<input id="$field28662$" class="InputStyle" name="field28662" value="[只读]编号" type="text" /><br />
             Number</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>部门：<input id="field28663" class="InputStyle" name="field28663" value="[只读]部门" type="text" /><br />
+            <td>部门：<input id="$field28663$" class="InputStyle" name="field28663" value="[只读]部门" type="text" /><br />
             Department</td>
             <td>&nbsp;</td>
-            <td>单位：<input id="field28664" class="InputStyle" name="field28664" value="[只读]单位" type="text" /><br />
+            <td>单位：<input id="$field28664$" class="InputStyle" name="field28664" value="[只读]单位" type="text" /><br />
             Branch</td>
-            <td>日期：<input id="field28665" class="InputStyle" name="field28665" value="[只读]日期" type="text" /><br />
+            <td>日期：<input id="$field28665$" class="InputStyle" name="field28665" value="[只读]日期" type="text" /><br />
             Date</td>
             <td>&nbsp;</td>
         </tr>
@@ -46,58 +46,56 @@
 </table>
 <br />
 <br />
-<table id="viewForm" class="ViewForm" cellspacing="0" cellpadding="0" name="oTable0" style="width:80%;">
-    <colgroup><col width="20%"></col><col width="10%"></col><col width="10%"></col><col width="10%"></col><col width="20%"></col><col width="10%"></col><col width="10%"></col><col width="10%"></col></colgroup>
+<table id="viewForm" class="ViewForm" cellspacing="0" cellpadding="0" name="oTable0">
+    <colgroup><col width="10%"></col><col width="20%"></col><col width="15%"></col><col width="12%"></col><col width="13%"></col><col width="15%"></col><col width="15%"></col></colgroup>
     <tbody>
         <tr>
             <td class="td" align="left">提案主题</td>
-            <td class="td" colspan="7" align="left">&nbsp;<input id="field28666" class="InputStyle" name="field28666" value="[可编辑]提案主题" type="text" /></td>
+            <td class="td" colspan="6" align="left">&nbsp;<input id="$field28666$" class="InputStyle" name="field28666" value="[只读]提案主题" type="text" /></td>
         </tr>
         <tr>
             <td class="td" align="left">工号</td>
-            <td class="td" colspan="2" align="left">&nbsp;<input id="field28667" class="InputStyle" name="field28667" value="[可编辑]工号" type="text" /></td>
+            <td class="td" colspan="2" align="left">&nbsp;<input id="$field28667$" class="InputStyle" name="field28667" value="[只读]工号" type="text" /></td>
             <td class="td" align="left">改善完成时间</td>
-            <td class="td" colspan="4" align="left">&nbsp;<input id="field28668" class="InputStyle" name="field28668" value="[可编辑]改善完成时间" type="text" /></td>
+            <td class="td" colspan="3" align="left">&nbsp;<input id="$field28668$" class="InputStyle" name="field28668" value="[只读]改善完成时间" type="text" /></td>
         </tr>
         <tr>
             <td class="td" align="right">
             <p>提案类别</p>
             </td>
-            <td class="td" colspan="7" align="left">
-            <p>&nbsp;<input style="width: 30px; height: 23px" id="field28669" class="InputStyle" size="4" name="field28669" value="[可编辑]质量提升" type="text" /><input id="label28669" class="Label" name="label28669" value="质量提升" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 22px; height: 23px" id="field28670" class="InputStyle" size="3" name="field28670" value="[可编辑]设备改进" type="text" /><input id="label28670" class="Label" name="label28670" value="设备改进" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 25px; height: 23px" id="field28671" class="InputStyle" size="3" name="field28671" value="[可编辑]人员管理" type="text" /><input id="label28671" class="Label" name="label28671" value="人员管理" type="text" />&nbsp;&nbsp;&nbsp;&nbsp; <input style="width: 26px; height: 23px" id="field28672" class="InputStyle" size="4" name="field28672" value="[可编辑]提高效率" type="text" /><input id="label28672" class="Label" name="label28672" value="提高效率" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <p>&nbsp;<input style="width: 28px; height: 24px" id="field28673" class="InputStyle" size="4" name="field28673" value="[可编辑]技术改进" type="text" /><input id="label28673" class="Label" name="label28673" value="技术改进" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 27px; height: 24px" id="field28674" class="InputStyle" size="4" name="field28674" value="[可编辑]降低成本" type="text" /><input id="label28674" class="Label" name="label28674" value="降低成本" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 24px; height: 24px" id="field28675" class="InputStyle" size="3" name="field28675" value="[可编辑]工艺改进" type="text" /><input id="label28675" class="Label" name="label28675" value="工艺改进" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 20px; height: 24px" id="field28676" class="InputStyle" size="3" name="field28676" value="[可编辑]工作方法" type="text" /><input id="label28676" class="Label" name="label28676" value="工作方法" type="text" /></p>
-            <p><input style="width: 21px; height: 23px" id="field28677" class="InputStyle" size="3" name="field28677" value="[可编辑]安全健康" type="text" /><input id="label28677" class="Label" name="label28677" value="安全健康" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 27px; height: 23px" id="field28678" class="InputStyle" size="4" name="field28678" value="[可编辑]其他" type="text" /><input id="label28678" class="Label" name="label28678" value="其他" type="text" /></p>
+            <td class="td" colspan="6" align="left">
+            <p>&nbsp;<input style="width: 30px; height: 23px" id="$field28669$" class="InputStyle" size="4" name="field28669" value="[只读]质量提升" type="text" /><input id="$label28669$" class="Label" name="label28669" value="质量提升" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 22px; height: 23px" id="$field28670$" class="InputStyle" size="3" name="field28670" value="[只读]设备改进" type="text" /><input id="$label28670$" class="Label" name="label28670" value="设备改进" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 25px; height: 23px" id="$field28671$" class="InputStyle" size="3" name="field28671" value="[只读]人员管理" type="text" /><input id="$label28671$" class="Label" name="label28671" value="人员管理" type="text" />&nbsp;&nbsp;&nbsp;&nbsp; <input style="width: 26px; height: 23px" id="$field28672$" class="InputStyle" size="4" name="field28672" value="[只读]提高效率" type="text" /><input id="$label28672$" class="Label" name="label28672" value="提高效率" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>&nbsp;<input style="width: 28px; height: 24px" id="$field28673$" class="InputStyle" size="4" name="field28673" value="[只读]技术改进" type="text" /><input id="$label28673$" class="Label" name="label28673" value="技术改进" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 27px; height: 24px" id="$field28674$" class="InputStyle" size="4" name="field28674" value="[只读]降低成本" type="text" /><input id="$label28674$" class="Label" name="label28674" value="降低成本" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 24px; height: 24px" id="$field28675$" class="InputStyle" size="3" name="field28675" value="[只读]工艺改进" type="text" /><input id="$label28675$" class="Label" name="label28675" value="工艺改进" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 20px; height: 24px" id="$field28676$" class="InputStyle" size="3" name="field28676" value="[只读]工作方法" type="text" /><input id="$label28676$" class="Label" name="label28676" value="工作方法" type="text" /></p>
+            <p><input style="width: 21px; height: 23px" id="$field28677$" class="InputStyle" size="3" name="field28677" value="[只读]安全健康" type="text" /><input id="$label28677$" class="Label" name="label28677" value="安全健康" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 27px; height: 23px" id="$field28678$" class="InputStyle" size="4" name="field28678" value="[只读]其他" type="text" /><input id="$label28678$" class="Label" name="label28678" value="其他" type="text" /></p>
             </td>
         </tr>
         <tr>
             <td class="td" align="left">改善前问题说明</td>
-            <td class="td" colspan="2" align="left">&nbsp;<input id="field28679" class="InputStyle" name="field28679" value="[可编辑]改善前问题说明" type="text" /></td>
+            <td class="td" colspan="2" align="left">&nbsp;<input id="$field28679$" class="InputStyle" name="field28679" value="[只读]改善前问题说明" type="text" /></td>
             <td class="td" align="left">改善对策（具体方法）</td>
-            <td class="td" colspan="4" align="right">&nbsp;<input id="field28823" class="InputStyle" name="field28823" value="[可编辑]改善对策" type="text" /></td>
+            <td class="td" colspan="3" align="right">&nbsp;<input id="$field28823$" class="InputStyle" name="field28823" value="[只读]改善对策" type="text" /><input id="$field52261$" class="InputStyle" name="field52261" value="[只读]改善效益" type="text" /></td>
         </tr>
         <tr>
-            <td class="td" align="left">改善后效果说明</td>
-            <td class="td" colspan="7" align="left">
-            <p>&nbsp;<input id="field28680" class="InputStyle" name="field28680" value="[可编辑]改善后效果说明" type="text" /></p>
-            <p><input id="field28681" class="InputStyle" name="field28681" value="[可编辑]改善后效果附件" type="text" /></p>
+            <td class="td" align="left">改善后效果说明（部门负责人）</td>
+            <td class="td" colspan="3" align="left">
+            <p>&nbsp;<input id="$field28680$" class="InputStyle" name="field28680" value="[只读]改善后效果说明" type="text" /></p>
+            <p>&nbsp;</p>
             </td>
+            <td class="td" align="left">投资（部门负责人）</td>
+            <td class="td" colspan="2" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="$field28682$" class="InputStyle" name="field28682" value="[只读]投资" type="text" />&nbsp; （元）</td>
         </tr>
         <tr>
-            <td class="td" align="left">投资</td>
-            <td class="td" colspan="2" align="left"><input id="field28682" class="InputStyle" name="field28682" value="[可编辑]投资（4级及以上）" type="text" />&nbsp;元</td>
-            <td class="td" align="left">每年效益</td>
-            <td class="td" colspan="4" align="left" name="field28683" type="text" value="[可编辑]每年效益（4级及以上）"><input id="field28683" class="InputStyle" name="field28683" value="[可编辑]每年效益（4级及以上）" type="text" />&nbsp;元</td>
-        </tr>
-        <tr>
-            <td class="td" align="left">改善效果评价（申请人上级填写）</td>
-            <td class="td" colspan="7" align="left">&nbsp;<input id="field28684" class="InputStyle" name="field28684" value="[可编辑]改善效果评价" type="text" /></td>
+            <td class="td" align="left">改善效益（IE）</td>
+            <td class="td" colspan="6" align="left">&nbsp;<input id="$field28683$" class="InputStyle" name="field28683" value="[只读]每年效益（4级及以上）" type="text" />
+            <p><input id="$field28681$" class="InputStyle" name="field28681" value="[只读]改善后效果附件" type="text" /></p>
+            </td>
         </tr>
         <tr>
             <td class="td" aligh="left">评价项目</td>
             <td class="td" aligh="left">评分标准</td>
             <td class="td" aligh="left">平分</td>
             <td class="td" aligh="left">评价项目</td>
-            <td class="td" colspan="3" aligh="left">评分标准</td>
+            <td class="td" colspan="2" aligh="left">评分标准</td>
             <td class="td" aligh="left">评分</td>
         </tr>
         <tr>
@@ -105,37 +103,37 @@
             <td class="td" aligh="left">资料分析并辅以图表说明</td>
             <td class="td" aligh="left">5</td>
             <td class="td" rowspan="6" aligh="center">推广</td>
-            <td class="td" colspan="3" aligh="left">创意可以推广至全公司</td>
+            <td class="td" colspan="2" aligh="left">创意可以推广至全公司</td>
             <td class="td" aligh="left">5</td>
         </tr>
         <tr>
             <td class="td" aligh="left">资料分析改善内容具体</td>
             <td class="td" aligh="left">4</td>
-            <td class="td" colspan="3" aligh="left">创意可以跨部门推广</td>
+            <td class="td" colspan="2" aligh="left">创意可以跨部门推广</td>
             <td class="td" aligh="left">4</td>
         </tr>
         <tr>
             <td class="td" aligh="left">以5W1H、PDCA具体文字说明</td>
             <td class="td" aligh="left">3</td>
-            <td class="td" colspan="3" aligh="left">创意可以同部门推广</td>
+            <td class="td" colspan="2" aligh="left">创意可以同部门推广</td>
             <td class="td" aligh="left">3</td>
         </tr>
         <tr>
             <td class="td" aligh="left">一般性文字描述检验内容</td>
             <td class="td" aligh="left">2</td>
-            <td class="td" colspan="3" aligh="left">创意可以在部门内推广</td>
+            <td class="td" colspan="2" aligh="left">创意可以在部门内推广</td>
             <td class="td" aligh="left">2</td>
         </tr>
         <tr>
             <td class="td" aligh="left">仅提出改善方向没有具体内容</td>
             <td class="td" aligh="left">1</td>
-            <td class="td" colspan="3" aligh="left">单纯依工作申请要求执行</td>
+            <td class="td" colspan="2" aligh="left">单纯依工作申请要求执行</td>
             <td class="td" aligh="left">1</td>
         </tr>
         <tr>
             <td class="td" aligh="left">仅提出问题没有具体建议</td>
             <td class="td" aligh="left">0</td>
-            <td class="td" colspan="3" aligh="left">弥补工作失误或遗漏</td>
+            <td class="td" colspan="2" aligh="left">弥补工作失误或遗漏</td>
             <td class="td" aligh="left">0</td>
         </tr>
         <tr>
@@ -143,31 +141,31 @@
             <td class="td" aligh="left">&ge;100万</td>
             <td class="td" aligh="left">5</td>
             <td class="td" rowspan="5" aligh="left">创益</td>
-            <td class="td" colspan="3" aligh="left">突破性改善（专利或论文）</td>
+            <td class="td" colspan="2" aligh="left">突破性改善（专利或论文）</td>
             <td class="td" aligh="left">5</td>
         </tr>
         <tr>
             <td class="td" aligh="left">&ge;50万</td>
             <td class="td" aligh="left">4</td>
-            <td class="td" colspan="3" aligh="left">CIT/CIC/QCC专案改善</td>
+            <td class="td" colspan="2" aligh="left">CIT/CIC/QCC专案改善</td>
             <td class="td" aligh="left">4</td>
         </tr>
         <tr>
             <td class="td" aligh="left">&ge;10万</td>
             <td class="td" aligh="left">3</td>
-            <td class="td" colspan="3" aligh="left">个人创意执行改善</td>
+            <td class="td" colspan="2" aligh="left">个人创意执行改善</td>
             <td class="td" aligh="left">3</td>
         </tr>
         <tr>
             <td class="td" aligh="left">&ge;1万</td>
             <td class="td" aligh="left">2</td>
-            <td class="td" colspan="3" aligh="left">主管指示改善</td>
+            <td class="td" colspan="2" aligh="left">主管指示改善</td>
             <td class="td" aligh="left">2</td>
         </tr>
         <tr>
             <td class="td" aligh="left">&lt;1万</td>
             <td class="td" aligh="left">1</td>
-            <td class="td" colspan="3" aligh="left">事务设施或软体缺失指示提醒td&gt;</td>
+            <td class="td" colspan="2" aligh="left">事务设施或软体缺失指示提醒</td>
             <td class="td" aligh="left">1</td>
         </tr>
         <tr>
@@ -177,101 +175,62 @@
             <td class="td" aligh="left">效益得分</td>
             <td class="td" aligh="left">创益得分</td>
             <td class="td" aligh="left">总分</td>
-            <td class="td" aligh="left">评分人签字</td>
             <td class="td" aligh="left">最终得分=总分*权重比</td>
         </tr>
         <tr>
             <td class="td" aligh="left">申请部门负责人</td>
-            <td class="td" aligh="left">&nbsp;<input id="field52161" class="InputStyle" name="field52161" value="[可编辑]内容分1" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52164" class="InputStyle" name="field52164" value="[可编辑]推广分1" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52167" class="InputStyle" name="field52167" value="[可编辑]效益1" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52170" class="InputStyle" name="field52170" value="[可编辑]创益1" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52173" class="InputStyle" name="field52173" value="[可编辑]总分1" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="node27467" class="InputStyle" disabled="disabled" name="node27467" value="申请人上级" type="text" /></td>
-            <td class="td" rowspan="3" aligh="left">&nbsp;<input id="field52176" class="InputStyle" name="field52176" value="[可编辑]最终得分" type="text" /></td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52281$" class="InputStyle" name="field52281" value="[只读]内容1" type="text" /></td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52284$" class="InputStyle" name="field52284" value="[只读]推广1" type="text" /></td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52287$" class="InputStyle" name="field52287" value="[只读]效益1" type="text" /></td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52290$" class="InputStyle" name="field52290" value="[只读]创益1" type="text" /></td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52293$" class="InputStyle" name="field52293" value="[只读]总分1" type="text" /></td>
+            <td class="td" rowspan="2" aligh="left">&nbsp;<input id="$field52296$" class="InputStyle" name="field52296" value="" type="text" /></td>
         </tr>
         <tr>
             <td class="td" aligh="left">品质部</td>
-            <td class="td" aligh="left">&nbsp;<input id="field52162" class="InputStyle" name="field52162" value="[可编辑]内容2" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52165" class="InputStyle" name="field52165" value="[可编辑]推广分2" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52168" class="InputStyle" name="field52168" value="[可编辑]效益2" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52171" class="InputStyle" name="field52171" value="[可编辑]创益2" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52174" class="InputStyle" name="field52174" value="[可编辑]总分2" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="node27469" class="InputStyle" disabled="disabled" name="node27469" value="品质" type="text" /></td>
-        </tr>
-        <tr>
-            <td class="td" aligh="left">财务部</td>
-            <td class="td" aligh="left">&nbsp;<input id="field52163" class="InputStyle" name="field52163" value="[可编辑]内容3" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52166" class="InputStyle" name="field52166" value="[可编辑]推广分3" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52169" class="InputStyle" name="field52169" value="[可编辑]效益3" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52172" class="InputStyle" name="field52172" value="[可编辑]创益3" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="field52175" class="InputStyle" name="field52175" value="[可编辑]总分3" type="text" /></td>
-            <td class="td" aligh="left">&nbsp;<input id="node44081" class="InputStyle" disabled="disabled" name="node44081" value="财务评审" type="text" /></td>
-        </tr>
-        <tr>
-            <td class="td" align="left">品质签核日期</td>
-            <td class="td" colspan="7" align="left">&nbsp;<input id="field28693" class="InputStyle" name="field28693" value="[可编辑]品质签核日期" type="text" /></td>
-        </tr>
-        <tr>
-            <td class="td" align="left">IE每年效益评估</td>
-            <td class="td" colspan="7" align="left">
-            <p><input id="field28685" class="InputStyle" name="field28685" value="[可编辑]IE每年效益评估" type="text" />&nbsp;元</p>
-            <p><input id="field28686" class="InputStyle" name="field28686" value="[可编辑]IE每年效益评估附件" type="text" /></p>
-            </td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52282$" class="InputStyle" name="field52282" value="[必填]内容2" type="text" /></td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52285$" class="InputStyle" name="field52285" value="[必填]推广2" type="text" /></td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52288$" class="InputStyle" name="field52288" value="[必填]效益2" type="text" /></td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52291$" class="InputStyle" name="field52291" value="[必填]创益2" type="text" /></td>
+            <td class="td" aligh="left">&nbsp;<input id="$field52294$" class="InputStyle" name="field52294" value="[只读]总分2" type="text" /></td>
         </tr>
         <tr>
             <td class="td" align="left">终审级数（厂长）</td>
-            <td class="td" colspan="7" align="left">&nbsp;<input id="field28694" class="InputStyle" name="field28694" value="[可编辑]终审级数（厂长）" type="text" /></td>
+            <td class="td" colspan="6" align="left">&nbsp;<input id="$field52301$" class="InputStyle" name="field52301" value="[只读]级别" type="text" />级</td>
         </tr>
         <tr>
             <td class="td" align="left">奖金</td>
-            <td class="td" colspan="7" align="left">&nbsp;<input id="field28696" class="InputStyle" name="field28696" value="[可编辑]奖金" type="text" /></td>
+            <td class="td" colspan="6" align="left">&nbsp;<input id="$field28696$" class="InputStyle" name="field28696" value="[只读]奖金" type="text" /></td>
+        </tr>
+        <tr>
+            <td class="td" align="center">申请人：</td>
+            <td class="td" align="left">&nbsp;<input id="$node44227$" class="InputStyle" disabled="disabled" name="node44227" value="申请人" type="text" /></td>
+            <td class="td" align="center">申请部门经理：</td>
+            <td class="td" align="left">&nbsp;<input id="$node44229$" class="InputStyle" disabled="disabled" name="node44229" value="申请部门经理" type="text" /></td>
+            <td class="td" align="center">申请部门负责人：</td>
+            <td class="td" colspan="2" align="left">&nbsp;<input id="$node44228$" class="InputStyle" disabled="disabled" name="node44228" value="申请部门负责人" type="text" /></td>
+        </tr>
+        <tr>
+            <td class="td" align="center">品质：</td>
+            <td class="td" align="left">&nbsp;<input id="$node44230$" class="InputStyle" disabled="disabled" name="node44230" value="品质" type="text" /></td>
+            <td class="td" align="center">IE：</td>
+            <td class="td" align="left">&nbsp;<input id="$node44232$" class="InputStyle" disabled="disabled" name="node44232" value="IE" type="text" /></td>
+            <td class="td" align="center">财务评审：</td>
+            <td class="td" colspan="2" align="left">&nbsp;<input id="$node44240$" class="InputStyle" disabled="disabled" name="node44240" value="财务评审" type="text" /></td>
+        </tr>
+        <tr>
+            <td class="td" align="center">品质经理：</td>
+            <td class="td" align="left">&nbsp;<input id="$node44231$" class="InputStyle" disabled="disabled" name="node44231" value="品质经理" type="text" /></td>
+            <td class="td" align="center">IE经理：</td>
+            <td class="td" align="left">&nbsp;<input id="$node44233$" class="InputStyle" disabled="disabled" name="node44233" value="IE经理" type="text" /></td>
+            <td class="td" align="center">厂长审核：</td>
+            <td class="td" colspan="2" align="left">&nbsp;<input id="$node44234$" class="InputStyle" disabled="disabled" name="node44234" value="厂长" type="text" /></td>
         </tr>
     </tbody>
 </table>
 <br />
 <br />
-<table id="viewForm" class="ViewForm" cellspacing="0" cellpadding="0" name="oTable0" style="width:80%;">
-    <colgroup><col width="25%"></col><col width="75%"></col></colgroup>
-    <tbody>
-        <tr>
-            <td class="td" align="left">申请人</td>
-            <td class="td" align="left">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="td" align="left">申请人上级</td>
-            <td class="td" align="left">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="td" align="left">申请部门经理</td>
-            <td class="td" align="left">&nbsp;<input id="node27468" class="InputStyle" disabled="disabled" name="node27468" value="申请部门经理" type="text" /></td>
-        </tr>
-        <tr>
-            <td class="td" align="left">品质</td>
-            <td class="td" align="left">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="td" align="left">品质经理</td>
-            <td class="td" align="left">&nbsp;<input id="node27470" class="InputStyle" disabled="disabled" name="node27470" value="品质经理" type="text" /></td>
-        </tr>
-        <tr>
-            <td class="td" align="left">IE</td>
-            <td class="td" align="left">&nbsp;<input id="node27471" class="InputStyle" disabled="disabled" name="node27471" value="IE" type="text" /></td>
-        </tr>
-        <tr>
-            <td class="td" align="left">IE经理</td>
-            <td class="td" align="left">&nbsp;<input id="node27472" class="InputStyle" disabled="disabled" name="node27472" value="IE经理" type="text" /></td>
-        </tr>
-        <tr>
-            <td class="td" align="left">财务评审</td>
-            <td class="td" align="left">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="td" align="left">厂长</td>
-            <td class="td" align="left">&nbsp;<input id="node27473" class="InputStyle" disabled="disabled" name="node27473" value="厂长" type="text" />&nbsp;&nbsp;&nbsp;</td>
-        </tr>
-    </tbody>
-</table>
+
 </div>   
     <script language="javascript" type="text/javascript">
         $("#field52161").change(function () {
